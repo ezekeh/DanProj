@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 html {
@@ -159,7 +160,9 @@ section {
 .section-container {
   display: flex;
 }
-
+.details-container, .about-containers, .contact-info-upper-container {
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.06);
+}
 /* PROFILE SECTION */
 
 #profile {
@@ -222,6 +225,10 @@ section {
   justify-content: center;
   gap: 1rem;
 }
+.btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 2px 20px rgba(53,53,53,0.15);
+}
 
 .btn {
   font-weight: 600;
@@ -240,7 +247,9 @@ section {
 .btn-color-2:hover {
   cursor: pointer;
 }
-
+.section__pic-container img, .about-pic {
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+}
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
@@ -400,4 +409,10 @@ footer {
 
 footer p {
   text-align: center;
+}
+* {
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+p, .section__text__p2, .about-details-container, .experience-sub-title, .contact-info-container p {
+  color: #333 !important;
 }
